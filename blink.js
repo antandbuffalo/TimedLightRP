@@ -1,5 +1,5 @@
 'use strict';
-var rp = false;
+var rp = true;
 var Gpio, blueLight, whiteLight;
 var ONE_SECOND = 1000;
 var ONE_MINUTE = ONE_SECOND;
