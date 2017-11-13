@@ -29,7 +29,7 @@ function init() {
         var currentTime = new Date();
         var hour = currentTime.getHours();
         
-        if(hour >= ON_TIME || hour <= OFF_TIME) {
+        //if(hour >= ON_TIME || hour <= OFF_TIME) {
             if(isBlueOn) {
                 isBlueOn = false;
                 blueLight.writeSync(0);    //LED ON
@@ -40,11 +40,11 @@ function init() {
                 blueLight.writeSync(1);    //LED ON
                 whiteLight.writeSync(0);    //LED ON    
             }
-        }
-        else {
-            blueLight.writeSync(0);    //LED OFF
-            whiteLight.writeSync(0);    //LED OFF
-        }
+        // }
+        // else {
+        //     blueLight.writeSync(0);    //LED OFF
+        //     whiteLight.writeSync(0);    //LED OFF
+        // }
         init();
     }, INTERVAL);
 };

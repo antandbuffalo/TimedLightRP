@@ -1,0 +1,5 @@
+Run node js program on boot
+add the following command to
+/etc/rc.local file
+you have to run the above command as sudo
+su pi -c ‘node /home/pi/Dev/node_programs/TimedLight/test.js < /dev/null &’
