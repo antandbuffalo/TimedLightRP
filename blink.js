@@ -58,6 +58,6 @@ if(ON) {
     whiteLight.writeSync(1);
 }
 if(!ON && !OFF) {
-    INTERVAL = ONE_SECOND * 2;
+    INTERVAL = ONE_SECOND;
     init();    
 }
